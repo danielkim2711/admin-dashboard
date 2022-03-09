@@ -6,10 +6,11 @@ import DogEdit from './components/dogs/DogEdit';
 import UserList from './components/users/UserList';
 import UserRegister from './components/users/UserRegister';
 import UserEdit from './components/users/UserEdit';
+import { Layout } from './Layout';
 
 function App() {
   return (
-    <Admin dataProvider={restProvider('http://localhost:3000')}>
+    <Admin layout={Layout} dataProvider={restProvider('http://localhost:3000')}>
       <Resource
         name='dogs'
         list={DogList}

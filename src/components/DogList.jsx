@@ -2,6 +2,7 @@ import {
   List,
   Datagrid,
   TextField,
+  ImageField,
   NumberField,
   BooleanField,
   DateField,
@@ -15,6 +16,7 @@ const DogList = (props) => {
     <List {...props}>
       <Datagrid>
         <TextField source='id' />
+        <ImageField source='dogImage' />
         <TextField source='name' />
         <NumberField source='age' />
         <TextField source='breed' />

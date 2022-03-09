@@ -2,7 +2,6 @@ import {
   List,
   Datagrid,
   TextField,
-  ImageField,
   NumberField,
   BooleanField,
   DateField,
@@ -10,13 +9,14 @@ import {
   EditButton,
   DeleteButton,
 } from 'react-admin';
+import ListAvatar from './ListAvatar';
 
 const DogList = (props) => {
   return (
     <List {...props}>
       <Datagrid>
         <TextField source='id' />
-        <ImageField source='dogImage' />
+        <ListAvatar />
         <TextField source='name' />
         <NumberField source='age' />
         <TextField source='breed' />

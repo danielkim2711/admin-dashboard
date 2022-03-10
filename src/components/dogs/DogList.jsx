@@ -9,14 +9,14 @@ import {
   EditButton,
   DeleteButton,
 } from 'react-admin';
-import ListAvatar from './ListAvatar';
+import DogAvatar from './DogAvatar';
 
 const DogList = (props) => {
   return (
     <List {...props}>
       <Datagrid>
         <TextField source='id' />
-        <ListAvatar />
+        <DogAvatar />
         <TextField source='name' />
         <NumberField source='age' />
         <TextField source='breed' />

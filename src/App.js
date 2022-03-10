@@ -9,11 +9,13 @@ import UserEdit from './components/users/UserEdit';
 import PetsIcon from '@mui/icons-material/Pets';
 import PersonIcon from '@mui/icons-material/Person';
 import Dashboard from './Dashboard';
+import authProvider from './authProvider';
 
 function App() {
   return (
     <Admin
       dashboard={Dashboard}
+      authProvider={authProvider}
       dataProvider={simpleRestProvider('http://localhost:3000')}
     >
       <Resource
